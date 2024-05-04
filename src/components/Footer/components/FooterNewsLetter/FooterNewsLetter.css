@@ -1,0 +1,32 @@
+.footer-news-letter {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  align-items: center;
+  justify-content: flex-end;
+  column-gap: 16px;
+  border-bottom: 1px solid rgba(48, 39, 40, 0.08);
+  padding-bottom: 30px;
+}
+
+.form-block {
+  display: flex;
+  align-items: center;
+  width: 400px;
+  column-gap: 4px;
+}
+
+.subscribe-block {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  letter-spacing: 1px;
+  font-family: sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.social֊media {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}

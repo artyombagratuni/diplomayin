@@ -1,0 +1,12 @@
+.footer-content-top {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+}
+
+.info {
+  width: 540px;
+  color: rgb(130, 130, 130);
+  font-size: 14px;
+  letter-spacing: 1px;
+}

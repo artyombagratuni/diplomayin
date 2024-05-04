@@ -1,0 +1,21 @@
+.footer-content-bottom {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+}
+
+.block-svgs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.svg-item {
+  padding: 5px;
+}
+
+.copyright {
+  font-size: 11px;
+  color: rgb(130, 130, 130);
+}

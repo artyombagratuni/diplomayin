@@ -1,0 +1,23 @@
+.head {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.currency-login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 10px;
+}
+
+.login-icon {
+  padding: 4px;
+  cursor: pointer;
+  transition: 0.4s;
+  font-size: 20px;
+}
+.login-icon:hover {
+  opacity: 0.8;
+}
