@@ -1,7 +1,7 @@
 import MenuHeader from "./components/Menu";
 
-import "./Header.css";
 import Head from "./components/Head";
+import "./Header.css";
 
 const WebHeader = () => (
   <div className="header">
