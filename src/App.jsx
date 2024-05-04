@@ -1,5 +1,3 @@
-// import LoginForm from "./components/LoginForm";
-// import RegisterForm from "./components/RegisterForm";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import BooksForDaysCrate from "./components/Home/components/BooksForDaysCrate";
