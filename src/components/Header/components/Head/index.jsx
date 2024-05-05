@@ -1,3 +1,5 @@
+import { useNavigate } from "react-router-dom";
+
 import { Input, Space, Select, Tooltip } from "antd";
 import { UserOutlined } from "@ant-design/icons";
 
@@ -6,6 +8,8 @@ import logo from "../../images/logo.avif";
 import "./Head.css";
 
 const Head = () => {
+  const navigate = useNavigate();
+
   const onChange = (value) => {
     console.log(`selected ${value}`);
   };
@@ -17,7 +21,11 @@ const Head = () => {
   return (
     <Space direction="horizontal" className="head">
       <Input.Search />
-      <img src={logo} />
+      <img
+        src={logo}
+        onClick={() => navigate("/")}
+        style={{ cursor: "pointer" }}
+      />
       <div className="currency-login">
         <Select
           showSearch

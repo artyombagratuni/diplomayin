@@ -1,9 +1,10 @@
 import { Routes, Route, BrowserRouter as Router } from "react-router-dom";
 
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 import HomePage from "./pages/HomePage";
-import AboutPage from "./pages/About";
-import ContactPage from "./pages/Contact";
+import AboutPage from "./pages/About/About";
+import ContactPage from "./pages/Contact/Contact";
 import MenuHeader from "./components/Header/components/Menu";
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
             </Route>
             {/* <Route path="login" element={<Login />} /> */}
           </Routes>
+          <Footer />
         </div>
       </Router>
     </>

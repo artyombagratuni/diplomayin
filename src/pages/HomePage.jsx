@@ -1,4 +1,3 @@
-import Footer from "../components/Footer";
 import ArtPrints from "../components/Home/components/ArtPrints";
 import BooksForDaysCrate from "../components/Home/components/BooksForDaysCrate";
 import DustJackets from "../components/Home/components/DustJackets";
@@ -12,7 +11,6 @@ const HomePage = () => (
     <DustJackets />
     <ArtPrints />
     <Apparel />
-    <Footer />
   </div>
 );
 
