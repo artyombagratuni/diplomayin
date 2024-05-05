@@ -1,8 +1,7 @@
-import { DUST_JACKETS } from "../mockData";
 import BookList from "../BookList";
 
-const DustJackets = () => (
-  <BookList title="Dust jackets" books={DUST_JACKETS} />
+const DustJackets = ({books}) => (
+  <BookList title="Dust jackets" books={books} />
 );
 
 export default DustJackets;

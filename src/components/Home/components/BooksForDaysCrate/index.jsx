@@ -1,8 +1,7 @@
-import { BOOKS_FOR_DAYS_CRATE } from "../mockData";
 import BookList from "../BookList";
 
-const BooksForDaysCrate = () => (
-  <BookList title="Books For Days Crate" books={BOOKS_FOR_DAYS_CRATE} />
+const BooksForDaysCrate = ({ books }) => (
+  <BookList title="Books For Days Crate" books={books} />
 );
 
 export default BooksForDaysCrate;

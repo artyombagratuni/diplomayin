@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { Card } from "antd";
 
 import "./BooksList.css";
@@ -7,6 +8,8 @@ const { Meta } = Card;
 
 const BookList = ({ title, books }) => {
   const [showAll, setShowAll] = useState(false);
+
+  const navigate = useNavigate();
 
   const toggleShowAll = () => {
     setShowAll(!showAll);
@@ -22,6 +25,14 @@ const BookList = ({ title, books }) => {
               key={index}
               hoverable
               className="card"
+              onClick={() =>
+                navigate(
+                  book.title
+                    .split(" ")
+                    .map((word) => word.toLowerCase())
+                    .join("-")
+                )
+              }
               cover={
                 <img alt="example" src={book.imageUrl} className="cardImage" />
               }

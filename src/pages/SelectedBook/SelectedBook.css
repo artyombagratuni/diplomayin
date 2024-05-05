@@ -1,0 +1,64 @@
+.selected-book-container {
+  margin-top: 190px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.selected-book {
+  width: 1120px;
+  display: flex;
+  justify-content: center;
+  column-gap: 100px;
+}
+
+.book-picture {
+  width: 500px;
+  height: 500px;
+}
+
+.right-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.imagine-books-shop {
+  font-size: 10px;
+  color: gray;
+}
+
+.book-title {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.book-price {
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.sold-out {
+  margin-left: 10px;
+  border-radius: 30px;
+  font-size: 15px;
+  padding: 10px;
+  font-weight: 400;
+  color: white;
+  background-color: #302728;
+}
+
+.counter {
+  margin-left: 10px;
+  width: 79.55px;
+}
+
+.buttons {
+  margin-top: 30px;
+}
+
+.button {
+  margin: 10px 0;
+}

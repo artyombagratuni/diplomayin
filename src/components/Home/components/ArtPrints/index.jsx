@@ -1,6 +1,5 @@
-import { ART_PRINTS } from "../mockData";
 import BookList from "../BookList";
 
-const ArtPrints = () => <BookList title="Art Prints" books={ART_PRINTS} />;
+const ArtPrints = ({books}) => <BookList title="Art Prints" books={books} />;
 
 export default ArtPrints;

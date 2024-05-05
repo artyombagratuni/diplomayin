@@ -1,19 +1,21 @@
-export const BOOKS_FOR_DAYS_CRATE = [
+export const BOOKS = [
   {
-    title: "Axmax girq",
+    title: "Axmax Girq",
     id: 1,
     imageUrl:
       "https://static1.s123-cdn-static-a.com/uploads/2066265/800_5ca64085e88b2.png",
     price: 2000,
     isSelled: true,
+    type: "books-for-days-crate",
   },
   {
-    title: "Normal girq",
+    title: "Normal Girq",
     id: 2,
     imageUrl:
       "https://easydrawingguides.com/wp-content/uploads/2020/10/how-to-draw-an-open-book-featured-image-1200.png",
     price: 2500,
     isSelled: false,
+    type: "books-for-days-crate",
   },
   {
     title: "Lav girq",
@@ -22,22 +24,25 @@ export const BOOKS_FOR_DAYS_CRATE = [
       "https://www.publicbooks.org/wp-content/uploads/2017/01/book-e1484158615982.jpg",
     price: 3000,
     isSelled: true,
+    type: "books-for-days-crate",
   },
   {
-    title: "Axmax girq",
+    title: "Tufta Girq",
     id: 4,
     imageUrl:
       "https://static1.s123-cdn-static-a.com/uploads/2066265/800_5ca64085e88b2.png",
     price: 3500,
     isSelled: true,
+    type: "books-for-days-crate",
   },
   {
-    title: "Ujegh girq",
+    title: "Hancharegh Girq",
     id: 5,
     imageUrl:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrkkQrQJvBXi_BNhJ_qZ4lcRF30rQfnlI-UcrKnjvFlg&s",
     price: 4000,
     isSelled: true,
+    type: "books-for-days-crate",
   },
   {
     title: "3 Xozuknery",
@@ -46,6 +51,7 @@ export const BOOKS_FOR_DAYS_CRATE = [
       "https://static1.s123-cdn-static-a.com/uploads/2066265/800_5ca64085e88b2.png",
     price: 2000,
     isSelled: true,
+    type: "books-for-days-crate",
   },
   {
     title: "Barekendan",
@@ -54,6 +60,7 @@ export const BOOKS_FOR_DAYS_CRATE = [
       "https://easydrawingguides.com/wp-content/uploads/2020/10/how-to-draw-an-open-book-featured-image-1200.png",
     price: 2500,
     isSelled: false,
+    type: "books-for-days-crate",
   },
   {
     title: "Kacin Apery",
@@ -62,6 +69,7 @@ export const BOOKS_FOR_DAYS_CRATE = [
       "https://www.publicbooks.org/wp-content/uploads/2017/01/book-e1484158615982.jpg",
     price: 3000,
     isSelled: true,
+    type: "books-for-days-crate",
   },
   {
     title: "Hreshneri Gayly",
@@ -70,265 +78,249 @@ export const BOOKS_FOR_DAYS_CRATE = [
       "https://static1.s123-cdn-static-a.com/uploads/2066265/800_5ca64085e88b2.png",
     price: 3500,
     isSelled: true,
+    type: "books-for-days-crate",
   },
-];
-
-export const PAGE_OVERLAY_SETS = [
   {
-    title: "Axmax girq",
+    title: "Sutlik Vorskany",
     id: 1,
     imageUrl:
       "https://static1.s123-cdn-static-a.com/uploads/2066265/800_5ca64085e88b2.png",
     price: 2000,
     isSelled: true,
+    type: "page-overlay-sets",
   },
   {
-    title: "Normal girq",
+    title: "Vini Tuxy",
     id: 2,
     imageUrl:
       "https://easydrawingguides.com/wp-content/uploads/2020/10/how-to-draw-an-open-book-featured-image-1200.png",
     price: 2500,
     isSelled: false,
+    type: "page-overlay-sets",
   },
   {
-    title: "Lav girq",
+    title: "Nerkir Inqd",
     id: 3,
     imageUrl:
       "https://www.publicbooks.org/wp-content/uploads/2017/01/book-e1484158615982.jpg",
     price: 3000,
     isSelled: true,
+    type: "page-overlay-sets",
   },
   {
-    title: "Axmax girq",
+    title: "Karda Inqd",
     id: 4,
     imageUrl:
       "https://static1.s123-cdn-static-a.com/uploads/2066265/800_5ca64085e88b2.png",
     price: 3500,
     isSelled: true,
+    type: "page-overlay-sets",
   },
   {
-    title: "Ujegh girq",
+    title: "Grir inqd",
     id: 5,
     imageUrl:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrkkQrQJvBXi_BNhJ_qZ4lcRF30rQfnlI-UcrKnjvFlg&s",
     price: 4000,
     isSelled: true,
+    type: "page-overlay-sets",
   },
   {
-    title: "3 Xozuknery",
+    title: "Aprir Inqd",
     id: 6,
     imageUrl:
       "https://static1.s123-cdn-static-a.com/uploads/2066265/800_5ca64085e88b2.png",
     price: 2000,
     isSelled: true,
+    type: "page-overlay-sets",
   },
   {
-    title: "Barekendan",
+    title: "Pogh Mi Vekal Tneciqic",
     id: 7,
     imageUrl:
       "https://easydrawingguides.com/wp-content/uploads/2020/10/how-to-draw-an-open-book-featured-image-1200.png",
     price: 2500,
     isSelled: false,
+    type: "page-overlay-sets",
   },
   {
-    title: "Kacin Apery",
+    title: "Usta Chale",
     id: 8,
     imageUrl:
       "https://www.publicbooks.org/wp-content/uploads/2017/01/book-e1484158615982.jpg",
     price: 3000,
     isSelled: true,
+    type: "page-overlay-sets",
   },
   {
-    title: "Hreshneri Gayly",
+    title: "Voske Dzknik",
     id: 9,
     imageUrl:
       "https://static1.s123-cdn-static-a.com/uploads/2066265/800_5ca64085e88b2.png",
     price: 3500,
     isSelled: true,
+    type: "page-overlay-sets",
   },
-];
-
-export const DUST_JACKETS = [
   {
-    title: "Axmax girq",
+    title: "Bulate Dzknik",
     id: 1,
     imageUrl:
       "https://static1.s123-cdn-static-a.com/uploads/2066265/800_5ca64085e88b2.png",
     price: 2000,
     isSelled: true,
+    type: "dust-jackets",
   },
   {
-    title: "Normal girq",
+    title: "Karasik",
     id: 2,
     imageUrl:
       "https://easydrawingguides.com/wp-content/uploads/2020/10/how-to-draw-an-open-book-featured-image-1200.png",
     price: 2500,
     isSelled: false,
+    type: "dust-jackets",
   },
   {
-    title: "Lav girq",
+    title: "Ishxan",
     id: 3,
     imageUrl:
       "https://www.publicbooks.org/wp-content/uploads/2017/01/book-e1484158615982.jpg",
     price: 3000,
     isSelled: true,
+    type: "dust-jackets",
   },
   {
-    title: "Axmax girq",
+    title: "Poqrik Ishxan",
     id: 4,
     imageUrl:
       "https://static1.s123-cdn-static-a.com/uploads/2066265/800_5ca64085e88b2.png",
     price: 3500,
     isSelled: true,
+    type: "dust-jackets",
   },
   {
-    title: "Ujegh girq",
+    title: "Normal Ishxan",
     id: 5,
     imageUrl:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrkkQrQJvBXi_BNhJ_qZ4lcRF30rQfnlI-UcrKnjvFlg&s",
     price: 4000,
     isSelled: true,
+    type: "dust-jackets",
   },
   {
-    title: "3 Xozuknery",
+    title: "Mec Ishxan",
     id: 6,
     imageUrl:
       "https://static1.s123-cdn-static-a.com/uploads/2066265/800_5ca64085e88b2.png",
     price: 2000,
     isSelled: true,
+    type: "dust-jackets",
   },
   {
-    title: "Barekendan",
+    title: "Mec Voskor Ishxan",
     id: 7,
     imageUrl:
       "https://easydrawingguides.com/wp-content/uploads/2020/10/how-to-draw-an-open-book-featured-image-1200.png",
     price: 2500,
     isSelled: false,
+    type: "dust-jackets",
   },
   {
-    title: "Kacin Apery",
+    title: "Antoshka",
     id: 8,
     imageUrl:
       "https://www.publicbooks.org/wp-content/uploads/2017/01/book-e1484158615982.jpg",
     price: 3000,
     isSelled: true,
+    type: "dust-jackets",
   },
   {
-    title: "Hreshneri Gayly",
+    title: "Kartoshka",
     id: 9,
     imageUrl:
       "https://static1.s123-cdn-static-a.com/uploads/2066265/800_5ca64085e88b2.png",
     price: 3500,
     isSelled: true,
+    type: "dust-jackets",
   },
-];
-
-export const ART_PRINTS = [
   {
-    title: "Axmax girq",
+    title: "Helnenq Cxenq",
     id: 1,
     imageUrl:
       "https://static1.s123-cdn-static-a.com/uploads/2066265/800_5ca64085e88b2.png",
     price: 2000,
     isSelled: true,
+    type: "all-prints",
   },
   {
-    title: "Normal girq",
+    title: "Alisan Hrashqneri Ashxarhum",
     id: 2,
     imageUrl:
       "https://easydrawingguides.com/wp-content/uploads/2020/10/how-to-draw-an-open-book-featured-image-1200.png",
     price: 2500,
     isSelled: false,
+    type: "all-prints",
   },
   {
-    title: "Lav girq",
+    title: "Ramily Hrashqneri Ashxarhum",
     id: 3,
     imageUrl:
       "https://www.publicbooks.org/wp-content/uploads/2017/01/book-e1484158615982.jpg",
     price: 3000,
     isSelled: true,
+    type: "all-prints",
   },
   {
-    title: "Axmax girq",
+    title: "Kirilly Hrashqneri Ashxarhum",
     id: 4,
     imageUrl:
       "https://static1.s123-cdn-static-a.com/uploads/2066265/800_5ca64085e88b2.png",
     price: 3500,
     isSelled: true,
+    type: "all-prints",
   },
   {
-    title: "Ujegh girq",
+    title: "Rashity Hrashqneri Ashxarhum",
     id: 5,
     imageUrl:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrkkQrQJvBXi_BNhJ_qZ4lcRF30rQfnlI-UcrKnjvFlg&s",
     price: 4000,
     isSelled: true,
+    type: "all-prints",
   },
   {
-    title: "3 Xozuknery",
+    title: "3 Xozuknery Hrashqneri Ashxarhum",
     id: 6,
     imageUrl:
       "https://static1.s123-cdn-static-a.com/uploads/2066265/800_5ca64085e88b2.png",
     price: 2000,
     isSelled: true,
+    type: "all-prints",
   },
   {
-    title: "Barekendan",
+    title: "Andur Tghan",
     id: 7,
     imageUrl:
       "https://easydrawingguides.com/wp-content/uploads/2020/10/how-to-draw-an-open-book-featured-image-1200.png",
     price: 2500,
     isSelled: false,
+    type: "all-prints",
   },
   {
-    title: "Kacin Apery",
+    title: "Durekan Tghan",
     id: 8,
     imageUrl:
       "https://www.publicbooks.org/wp-content/uploads/2017/01/book-e1484158615982.jpg",
     price: 3000,
     isSelled: true,
+    type: "all-prints",
   },
   {
-    title: "Hreshneri Gayly",
+    title: "Axmax Gyaden",
     id: 9,
     imageUrl:
       "https://static1.s123-cdn-static-a.com/uploads/2066265/800_5ca64085e88b2.png",
     price: 3500,
     isSelled: true,
-  },
-];
-
-export const APPAREL = [
-  {
-    title: "Axmax girq",
-    id: 1,
-    imageUrl:
-      "https://static1.s123-cdn-static-a.com/uploads/2066265/800_5ca64085e88b2.png",
-    price: 2000,
-    isSelled: true,
-  },
-  {
-    title: "Normal girq",
-    id: 2,
-    imageUrl:
-      "https://easydrawingguides.com/wp-content/uploads/2020/10/how-to-draw-an-open-book-featured-image-1200.png",
-    price: 2500,
-    isSelled: false,
-  },
-  {
-    title: "Lav girq",
-    id: 3,
-    imageUrl:
-      "https://www.publicbooks.org/wp-content/uploads/2017/01/book-e1484158615982.jpg",
-    price: 3000,
-    isSelled: true,
-  },
-  {
-    title: "Axmax girq",
-    id: 4,
-    imageUrl:
-      "https://static1.s123-cdn-static-a.com/uploads/2066265/800_5ca64085e88b2.png",
-    price: 3500,
-    isSelled: true,
+    type: "all-prints",
   },
 ];

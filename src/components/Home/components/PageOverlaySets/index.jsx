@@ -1,8 +1,7 @@
-import { PAGE_OVERLAY_SETS } from "../mockData";
 import BookList from "../BookList";
 
-const PageOverlaySets = () => (
-  <BookList title="Page Overlay Sets" books={PAGE_OVERLAY_SETS} />
+const PageOverlaySets = ({ books }) => (
+  <BookList title="Page Overlay Sets" books={books} />
 );
 
 export default PageOverlaySets;
