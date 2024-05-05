@@ -1,6 +1,6 @@
 import BookList from "../BookList";
 
-const DustJackets = ({books}) => (
+const DustJackets = ({ books }) => (
   <BookList title="Dust jackets" books={books} />
 );
 

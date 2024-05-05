@@ -51,7 +51,10 @@ const Head = () => {
           ]}
         />
         <Tooltip title="Sign In">
-          <UserOutlined className="login-icon" />
+          <UserOutlined
+            className="login-icon"
+            onClick={() => navigate("/account/login")}
+          />
         </Tooltip>
       </div>
     </Space>

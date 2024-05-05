@@ -12,7 +12,7 @@ const HomePage = ({ books }) => (
       books={books.filter((book) => book.type === "page-overlay-sets")}
     />
     <DustJackets books={books.filter((book) => book.type === "dust-jackets")} />
-    <ArtPrints books={books.filter((book) => book.type === "all-prints")} />
+    <ArtPrints books={books.filter((book) => book.type === "art-prints")} />
   </div>
 );
 
