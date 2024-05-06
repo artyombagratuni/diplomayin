@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom";
 
-import { Input, Space, Select, Tooltip } from "antd";
-import { UserOutlined } from "@ant-design/icons";
+import { Input, Space, Tooltip } from "antd";
+import { UserOutlined, ShoppingCartOutlined } from "@ant-design/icons";
 
 import logo from "../../images/logo.avif";
 
@@ -10,14 +10,6 @@ import "./Head.css";
 const Head = () => {
   const navigate = useNavigate();
 
-  const onChange = (value) => {
-    console.log(`selected ${value}`);
-  };
-  const onSearch = (value) => {
-    console.log("search:", value);
-  };
-  const filterOption = (input, option) =>
-    (option?.label ?? "").toLowerCase().includes(input.toLowerCase());
   return (
     <Space direction="horizontal" className="head">
       <Input.Search />
@@ -27,33 +19,13 @@ const Head = () => {
         style={{ cursor: "pointer" }}
       />
       <div className="currency-login">
-        <Select
-          showSearch
-          placeholder="Select a person"
-          optionFilterProp="children"
-          onChange={onChange}
-          onSearch={onSearch}
-          filterOption={filterOption}
-          defaultValue="dram"
-          options={[
-            {
-              value: "dram",
-              label: "AMD ֏ | Armenia",
-            },
-            {
-              value: "dollar",
-              label: "USD $ | United States",
-            },
-            {
-              value: "euro",
-              label: "EURO € | France",
-            },
-          ]}
-        />
         <Tooltip title="Sign In">
-          <UserOutlined
-            className="login-icon"
-            onClick={() => navigate("/account/login")}
+          <UserOutlined className="icon" />
+        </Tooltip>
+        <Tooltip title="Cart">
+          <ShoppingCartOutlined
+            className="icon"
+            onClick={() => navigate("/cart")}
           />
         </Tooltip>
       </div>

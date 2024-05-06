@@ -10,6 +10,7 @@ import ContactPage from "./pages/Contact/Contact";
 import MenuHeader from "./components/Header/components/Menu";
 import LoginPage from "./pages/LoginPage";
 import RegisterPage from "./pages/RegisterPage";
+import Cart from "./pages/Cart/Cart";
 
 function App() {
   const [books, setBooks] = useState([]);
@@ -51,6 +52,8 @@ function App() {
               element={<SelectedBook book={book} />}
             />
           ))}
+          <Route path="cart" element={<Cart />} />
+
           {/* <Route path="*" element={<NotFoundPage />} /> */}
         </Route>
       </Routes>

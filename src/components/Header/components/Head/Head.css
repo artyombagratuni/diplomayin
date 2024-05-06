@@ -12,12 +12,12 @@
   column-gap: 10px;
 }
 
-.login-icon {
+.icon {
   padding: 4px;
   cursor: pointer;
   transition: 0.4s;
   font-size: 20px;
 }
-.login-icon:hover {
+.icon:hover {
   opacity: 0.8;
 }
