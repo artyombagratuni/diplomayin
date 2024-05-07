@@ -12,17 +12,11 @@ import LoginPage from "./pages/LoginPage";
 import RegisterPage from "./pages/RegisterPage";
 import Cart from "./pages/Cart/Cart";
 
-function App() {
-  const [books, setBooks] = useState([]);
+import { BOOKS } from "./components/Home/components/mockData";
 
-  useEffect(() => {
-    const fetchBooks = async () => {
-      const response = await fetch("http://localhost:5000/books");
-      const data = await response.json();
-      setBooks(data);
-    };
-    fetchBooks();
-  }, []);
+function App() {
+
+  const [selectedBooks, setSelectedBooks] = useState([]);
 
   return (
     <div
@@ -37,22 +31,24 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<MenuHeader />}>
-          <Route index element={<HomePage books={books} />} />
+          <Route index element={<HomePage books={BOOKS} />} />
           <Route path="about" element={<AboutPage />} />
           <Route path="contact" element={<ContactPage />} />
           <Route path="account/login" element={<LoginPage />} />
           <Route path="account/register" element={<RegisterPage />} />
-          {books.map((book) => (
+          {BOOKS.map((book) => (
             <Route
               key={book.title}
               path={book.title
                 .split(" ")
                 .map((word) => word.toLowerCase())
                 .join("-")}
-              element={<SelectedBook book={book} />}
+              element={
+                <SelectedBook book={book} setSelectedBooks={setSelectedBooks} />
+              }
             />
           ))}
-          <Route path="cart" element={<Cart />} />
+          <Route path="cart" element={<Cart selectedBooks={selectedBooks} />} />
 
           {/* <Route path="*" element={<NotFoundPage />} /> */}
         </Route>

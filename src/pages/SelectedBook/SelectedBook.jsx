@@ -1,10 +1,13 @@
+import { useState } from "react";
 import { InputNumber, Space, Button } from "antd";
 
 import "./SelectedBook.css";
 
-const SelectedBook = ({ book }) => {
+const SelectedBook = ({ book, setSelectedBooks }) => {
+  const [quantity, setQuantity] = useState(1);
+
   const onChange = (value) => {
-    console.log("changed", value);
+    setQuantity(value);
   };
 
   return (
@@ -29,7 +32,7 @@ const SelectedBook = ({ book }) => {
                 size="large"
                 min={1}
                 max={100000}
-                defaultValue={1}
+                defaultValue={quantity}
                 onChange={onChange}
                 className="counter"
                 disabled={book.isSelled}
@@ -42,6 +45,23 @@ const SelectedBook = ({ book }) => {
               disabled={book.isSelled}
               block
               className="button"
+              onClick={() =>
+                setSelectedBooks((prev) => {
+                  const previousBook = prev.find(
+                    (prevBook) => prevBook.title === book.title
+                  );
+                  if (previousBook) {
+                    return [
+                      ...prev.filter((b) => b.title !== previousBook.title),
+                      {
+                        ...previousBook,
+                        quantity: previousBook.quantity + quantity,
+                      },
+                    ];
+                  }
+                  return [...prev, { ...book, quantity }];
+                })
+              }
             >
               Add to Cart
             </Button>
